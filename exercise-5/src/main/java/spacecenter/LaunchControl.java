@@ -7,9 +7,9 @@ public class LaunchControl {
     private RocketLauncher rocketLauncher;
     private PreFlightChecks preFlightChecks;
 
-    public LaunchControl() {
-        this.rocketLauncher = new RocketLauncher();
-        this.preFlightChecks = new PreFlightChecks();
+    public LaunchControl(RocketLauncher rocketLauncher, PreFlightChecks preFlightChecks) {
+        this.rocketLauncher = rocketLauncher;
+        this.preFlightChecks = preFlightChecks;
     }
 
     public int executeLaunch() {
